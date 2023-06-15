@@ -1,0 +1,28 @@
+POST https://asia-southeast2-capstone-cekin.cloudfunctions.net/auth/register
+Content-Type: application/json
+
+{
+    "username": "Admin Cek.In",
+    "email": "admin.cek.in@gmail.com",
+    "password": "admincekin",
+    "confirmPassword": "admincekin"
+}
+
+###
+POST https://asia-southeast2-capstone-cekin.cloudfunctions.net/auth/login
+Content-Type: application/json
+
+{    
+    "email": "admin.cek.in@gmail.com",
+    "password": "admincekin"
+}
+
+###
+GET https://asia-southeast2-capstone-cekin.cloudfunctions.net/auth/test
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE2ODY2MDIzNDk5NTEsInVzZXJuYW1lIjoiQWRtaW4gQ2VrLkluIiwiZW1haWwiOiJhZG1pbi5jZWsuaW5AZ21haWwuY29tIiwiaWF0IjoxNjg2NjAyNDQ0LCJleHAiOjE2ODY2MDI0NzR9.q-FVkglCYop_IxqfSPAmYbL7muHfiGBmjPmeSrJpR4M
+
+###
+GET https://asia-southeast2-capstone-cekin.cloudfunctions.net/auth/token
+
+###
+DELETE https://asia-southeast2-capstone-cekin.cloudfunctions.net/auth/logout
